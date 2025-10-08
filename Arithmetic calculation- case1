@@ -18,7 +18,7 @@ public class Solution {
                 System.out.println("Subtraction of two number is " +  result);
                 break;
                 case'*':
-                result=a+b;
+                result=a*b;
                 System.out.println("Multiplication of two number is " +  result);
                 break;
                 case'/':
