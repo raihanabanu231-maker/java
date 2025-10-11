@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int rows=sc.nextInt();
+        int cols=sc.nextInt();
+        int treeNumber=sc.nextInt();
+        int column=(treeNumber-1)/rows+1;
+        if(column==2 ||column==cols-1)
+            System.out.println("It is a mango tree");
+        else
+            System.out.println("It is not a mango tree");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
