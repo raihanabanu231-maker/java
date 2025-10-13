@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int L=sc.nextInt();
+        int B=sc.nextInt();
+        int l1=sc.nextInt();
+        int b1=sc.nextInt();
+        int l2=sc.nextInt();
+        int b2=sc.nextInt();
+        boolean horizontal=l1+l2<=L && Math.max(b1,b2)<=B;
+        boolean vertical=b1+b2<=B && Math.max(l1,l2)<=L;
+        if(horizontal || vertical)
+            System.out.println("Raj can fix both painting");
+        else
+             System.out.println("Raj cannot fix both painting");
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
