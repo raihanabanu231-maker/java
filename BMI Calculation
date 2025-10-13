@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        float weight=sc.nextFloat();
+        float height=sc.nextFloat();
+        float heightMeter=height/100;
+        float bmi=weight/(heightMeter*heightMeter);
+        if(bmi<18.5)
+            System.out.println("You are underweight. Have an apple daily.");
+        else if(bmi>=18.5&&bmi<=24.9)
+             System.out.println("You are normal. Go walking daily and maintain it.");
+         else if(bmi>=25&&bmi<=29.9)      
+                                 System.out.println("You are overweight. Go to Gym daily.");
+         else   
+                    System.out.println("You are obese. You need to see a doctor.");
+                                                    
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
