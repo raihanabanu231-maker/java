@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int num[]=new int[n];
+        for(int i=0;i<n;i++){
+            num[i]=sc.nextInt();}
+        int positivecount=0;
+        int negativecount=0;
+    
+        for(int i=0;i<n;i++){
+            if(num[i]>0)
+                positivecount++;
+            else
+                negativecount++;
+                
+        }
+            System.out.printf("Count of Positive Integer is %.2f\n",(float)positivecount);
+             System.out.printf("Count of Negative Integer is %.2f\n",(float)negativecount);
+        
+            
+        
+            
+        
+            
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
