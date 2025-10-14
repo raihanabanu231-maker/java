@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        char[]arr=s.toCharArray();
+        int hashcount=0;int starcount=0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]=='*')
+                starcount++;
+            else if(arr[i]=='#')
+                hashcount++;
+        }
+        int diff=starcount-hashcount;
+        int absdiff;
+        if(diff<0)
+            absdiff=-diff;
+        else
+            absdiff=diff;
+        if(absdiff==0)
+            System.out.println(0);
+        
+        else
+            System.out.printf("The Difference of the character in the given string: %03d",absdiff);
+                
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
